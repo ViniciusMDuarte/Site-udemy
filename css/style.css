@@ -1,0 +1,394 @@
+/* Reset */
+
+body, h1, h2, h3, p, ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	color: #252525;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+/* Menu */
+
+.menu {
+	background: #fff;
+	padding: 15px 0;
+	height: 80px;
+}
+
+.menu-nav ul {
+	float: right;
+}
+
+.menu-nav li a:hover {
+	border-bottom: 3px solid #D13796;
+}
+
+.menu-nav ul li {
+	display: inline-block;
+}
+.menu-nav a {
+	text-decoration: none;
+	color: #383652;
+	font-size: 1.125em;
+	display: block;
+	padding: 10px;
+	margin-left: 10px;
+}
+@media (max-width: 739px) {
+	.menu-logo img {
+		margin: 0 auto;
+	}
+	.menu-nav ul {
+		float: none;
+		text-align: center;
+		padding-top: 15px;
+	}
+	.menu-nav ul li a {
+		margin-left: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.menu-nav ul {
+		word-spacing: 10px
+	}
+}
+/* Intro */
+
+.intro {
+	background-color:#fff;
+	height: 690px;
+	color: #3B4CFA;
+	text-align: left;
+	padding-top: 60px;
+	
+}
+
+.intro h1 {
+	margin-top: 20px;
+	line-height: 1.2;
+	font-size: 3.3em;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+
+.intro p {
+	font-size: 2.2em;
+	font-weight: bold;
+	color:#383652;
+	margin-bottom: 40px;
+}
+
+.btn-intro {
+	border-radius: 10px;
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #D13796;
+    color: #fff;
+    font-size: 1.125em;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.icone-seguir {
+	margin:0 auto;
+	padding: 70px;
+}
+@media (max-width: 739px) {
+	.intro { 
+		padding: 40px 0;
+	}
+}
+
+/* Sobre */
+
+.cursos {
+	background-color: #3B4CFA;
+	padding: 60px 0;
+}
+.cursos h2 {
+	font-size: 2.25em;
+	text-align: center;
+	margin-bottom: 60px;
+	color:#fff;
+}
+
+.cards {
+	width: 370px;
+	height: 460px;
+	background-color: #fff;
+	border-radius: 20px;
+}
+
+
+
+.card-fotografia img {
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.card-fotografia h3 {
+	font-size: 30px;
+	margin-left: 50px;
+}
+
+.star {
+	display: inline-block;
+	padding-left: 50px;
+}
+.star li {
+	display: inline-block;
+
+}
+
+.cards p {
+	padding-left: 50px;
+}
+
+.instrutor {
+	padding-top: 45px;
+	font-weight: bold;
+	font-size: 18px;
+	color:#383652
+}
+
+.investimento {
+	font-size: 18px;
+	color:#3B4CFA;
+	font-weight: bold;
+	margin-bottom: 31px;
+}
+
+.cards .btn-intro {
+	margin-left: 55px;
+}
+
+.conquiste img {
+	margin-top: 100px;
+}
+.conquiste h3 {
+	margin-top:215px;
+	font-size: 40px;
+	color:#383652;
+	margin-bottom: 30px;
+    font-weight: 900;
+
+}
+/* Produtos */
+
+.produtos {
+	background: #e7e4d8;
+	border-top: 3px solid #d6d3c8;
+	border-bottom: 3px solid #d6d3c8;
+	padding: 60px 0;
+}
+
+.produtos-item {
+	margin-bottom: 40px;
+}
+.produtos-item h2 {
+	font-size: 2.25em;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.produtos-item h2::before {
+	content: '';
+	display: block;
+	width: 100px;
+	height: 100px;
+	background: currentColor;
+	border-radius: 50%;
+	border: 5px solid #e7e4d8;
+	box-shadow: 0 0 0 5px currentColor;
+	margin: 20px auto;
+}
+
+h2.produtos-paulista::before {
+	color: #492901;
+}
+
+h2.produtos-carioca::before {
+	color: #c17139;
+}
+
+h2.produtos-mineiro::before {
+	color: #d7a54d;
+}
+
+.produtos-item p {
+	font-size: 0.875em;
+	line-height: 1.4em;
+}
+
+.produtos-btn {
+	border: 3px solid #252525;
+	color: #252525;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.125em;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 15px;
+	width: 180px;
+	display: block;
+	margin: 0 auto;
+}
+
+/* Locais */
+
+.locais {
+	padding: 60px 0;
+}
+
+.locais-item img {
+	margin-bottom: 40px
+}
+
+.locais-item h2 {
+	font-size: 2.25em;
+	margin-bottom: 20px;
+
+}
+
+.locais-item p {
+	font-size: 1.125em;
+	line-height: 1.4em;
+	margin-bottom: 40px;
+}
+
+.locais-item a {
+	font-size: 1.125em;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 3px solid;
+	color: #252525;
+	padding: 10px 20px;
+}
+
+@media (max-width: 739px) {
+	
+	container {
+		margin-left: 10px;
+    	margin-right: 10px;
+	}
+	.intro {
+		height: 460px;
+	}
+	.intro img {
+		display: none;
+	}
+	
+	.intro h1 {
+		margin-top: 50px;
+		font-size: 2.5em;
+	}
+
+	.intro p {
+		font-size: 1.2em;
+	}
+
+	.locais-item img { 
+		margin-bottom: 10px;
+		margin-top: 40px;
+	}
+	.intro a {
+		width: 130px;
+	
+	}
+	.cursos h2 {
+		font-size: 1.6em;
+	}
+	.cards {
+		margin-bottom: 30px;
+	}
+}
+
+/* Assine */
+
+.assine {
+	background: #e7e4d8;
+	padding: 30px 0;
+}
+
+.assine-info h2 {
+	font-size: 2.25em;
+}
+
+.assine-info p {
+	font-size: 1.5em;
+	font-style: italic;
+}
+
+.assine form label {
+	display: none;
+}
+
+.assine input {
+	border: 3px solid #252525;
+	background: none;
+	font-size: 1.5em;
+	font-style: italic;
+	font-family: Georgia, serif;
+	width: 100%;
+	padding: 10px;
+}
+
+.assine button {
+	background: #252525;
+	border: none;
+	font-family: Georgia, serif;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	color: #fff;
+	cursor: pointer;
+	padding: 10px;
+	margin: 10px 0 0;
+}
+
+@media (max-width: 739px) {
+	.assine input {
+		margin-top: 10px;
+	}
+}
+
+
+/*Footer*/
+
+.footer {
+	background: #d6d3c8;
+	padding: 30px 0;
+}
+
+.footer p {
+	font-size: 1.125em;
+	line-height: 1.4em;
+}
+
+.footer img {
+	float: right;
+}
+
+@media (max-width: 739px) {
+	.footer img {
+		float: none;
+		margin-top: 20px;
+	}
+}
