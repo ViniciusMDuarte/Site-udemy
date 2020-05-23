@@ -355,13 +355,22 @@ h2.produtos-mineiro::before {
 
 .footer p {
 	margin-top: 100px;
-	font-size: 1.125em;
-	line-height: 1.4em;
+	font-size: 18px;
+	font-weight: 900;
+
 }
 
-.footer ul {
-	margin-top: 100px;
+.sociais {
+	margin-top: 97px;
+	margin-left: 332px;
 }
+
+.sociais li {
+	list-style: none;
+	display: inline-block;
+	margin-left: 10px;
+}
+
 .footer img {
 	float: right;
 }
