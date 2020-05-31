@@ -48,12 +48,10 @@ img {
 }
 @media (max-width: 739px) {
 	.menu-logo img {
-		margin: 0 auto;
+		margin: left;
 	}
 	.menu-nav ul {
-		float: none;
-		text-align: center;
-		padding-top: 15px;
+		display: none;
 	}
 	.menu-nav ul li a {
 		margin-left: 0px;
@@ -68,7 +66,6 @@ img {
 
 .intro {
 	background-color:#fff;
-	height: 690px;
 	color: #3B4CFA;
 	text-align: left;
 	padding-top: 60px;
@@ -88,14 +85,14 @@ img {
 	font-size: 2.2em;
 	font-weight: bold;
 	color:#383652;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 }
 
 .btn-intro {
+	display: block;
+	width: 350px;
 	border-radius: 10px;
-    padding: 15px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 20px 0;
     background-color: #D13796;
     color: #fff;
     font-size: 1.125em;
@@ -103,15 +100,48 @@ img {
     cursor: pointer;
     text-decoration: none;
 }
+.btn-intro:hover {
+	opacity: 0.9;
+}
 
 .icone-seguir {
 	margin:0 auto;
 	padding: 70px;
 }
+
 @media (max-width: 739px) {
 	.intro { 
-		padding: 40px 0;
+		height: 400px;
+		padding: 10px 0;
 	}
+
+	.container {
+		margin-left: 10px;
+    	margin-right: 10px;
+	}
+	.intro {
+		height: 380px;
+	}
+	.intro img {
+		display: none;
+	}
+	
+	.intro h1 {
+		margin-top: 20px;
+		font-size: 2.5em;
+	}
+
+	.intro p {
+		font-size: 1.2em;
+	}	
+
+	.btn-intro {
+	width: 100%;
+	padding: 15px;
+	}
+
+	
+
 }
 
 /* Sobre */
@@ -128,8 +158,8 @@ img {
 }
 
 .cards {
-	width: 370px;
-	height: 460px;
+	max-width: 370px;
+	height: 480px;
 	background-color: #fff;
 	border-radius: 20px;
 }
@@ -141,11 +171,11 @@ img {
 	align-items: center;
 	margin: auto;
 	max-width: 100%;
-	max-height: 100%;
+
 }
 
 .card-fotografia h3 {
-	font-size: 30px;
+	font-size: 1.875em;
 	margin-left: 50px;
 }
 
@@ -176,9 +206,21 @@ img {
 	margin-bottom: 31px;
 }
 
-.cards .btn-intro {
-	margin-left: 55px;
+
+.btn-cursos {
+	display: block;
+	width: 250px;
+	border-radius: 10px;
+    padding: 15px 0;
+    background-color: #D13796;
+    color: #fff;
+    font-size: 1.125em;
+    text-align: center;
+    cursor: pointer;
+	text-decoration: none;
+	margin: 0 auto;
 }
+
 
 .conquiste {
 	height: 900px;
@@ -194,70 +236,32 @@ img {
     font-weight: 900;
 
 }
+
+@media (max-width: 739px) {
+
+	.conquiste img {
+		margin-top: 50px;
+	}
+
+	.conquiste {
+		height: 800px;
+	}
+	.conquiste h3 {
+		margin-top: 0px;
+		font-size: 24px;
+		text-align: center;
+
+	}
+
+}
 /* Produtos */
 
-.produtos {
-	background: #e7e4d8;
-	border-top: 3px solid #d6d3c8;
-	border-bottom: 3px solid #d6d3c8;
-	padding: 60px 0;
-}
 
-.produtos-item {
-	margin-bottom: 40px;
-}
-.produtos-item h2 {
-	font-size: 2.25em;
-	text-align: center;
-	padding-bottom: 20px;
-}
-
-.produtos-item h2::before {
-	content: '';
-	display: block;
-	width: 100px;
-	height: 100px;
-	background: currentColor;
-	border-radius: 50%;
-	border: 5px solid #e7e4d8;
-	box-shadow: 0 0 0 5px currentColor;
-	margin: 20px auto;
-}
-
-h2.produtos-paulista::before {
-	color: #492901;
-}
-
-h2.produtos-carioca::before {
-	color: #c17139;
-}
-
-h2.produtos-mineiro::before {
-	color: #d7a54d;
-}
-
-.produtos-item p {
-	font-size: 0.875em;
-	line-height: 1.4em;
-}
-
-.produtos-btn {
-	border: 3px solid #252525;
-	color: #252525;
-	text-decoration: none;
-	text-align: center;
-	font-size: 1.125em;
-	font-weight: bold;
-	text-transform: uppercase;
-	padding: 15px;
-	width: 180px;
-	display: block;
-	margin: 0 auto;
-}
 
 /* Inscreva-se*/
 
 .bginscreva-se {
+	width: 100%;
 	background: url(../img/bg-inscrevase.png) no-repeat;
 	height: 213px;
 	position: absolute;
@@ -267,10 +271,10 @@ h2.produtos-mineiro::before {
 
 .btn-footer {
 	position: relative;
+	display: block;
 	border-radius: 10px;
     padding: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
+	width: 300px;
     background-color: #fff;
     color: #D13796;;
 	font-size: 1.5em;
@@ -279,19 +283,19 @@ h2.produtos-mineiro::before {
     cursor: pointer;
 	text-decoration: none;
 	margin-left: 50px;
-	top: 85px;
+	top: 70px;
 }
 
 .inscreva-se > h3 {
 	margin-top: 50px;
 	margin-left: 60px;
-	font-size: 40px;
+	font-size: 2.5em;
 	font-weight: 900;
 	color:#fff;
 }
 
 .inscreva-se > h4 {
-	font-size: 30px;
+	font-size: 1.875em;
 	font-weight: 400;
 	color: #fff;
 	margin-left: 60px;
@@ -299,41 +303,26 @@ h2.produtos-mineiro::before {
 }
 
 @media (max-width: 739px) {
-	
-	container {
-		margin-left: 10px;
-    	margin-right: 10px;
-	}
-	.intro {
-		height: 460px;
-	}
-	.intro img {
-		display: none;
-	}
-	
-	.intro h1 {
-		margin-top: 50px;
-		font-size: 2.5em;
-	}
-
-	.intro p {
-		font-size: 1.2em;
-	}
 
 	.locais-item img { 
 		margin-bottom: 10px;
 		margin-top: 40px;
 	}
-	.intro a {
-		width: 130px;
 	
-	}
 	.cursos h2 {
 		font-size: 1.6em;
 	}
 	.cards {
 		margin-bottom: 30px;
 	}
+	.bginscreva-se {
+		height: 200px;
+		width: 100%;
+		border-radius: 0px;
+		position: relative;
+	
+	}
+
 }
 
 /* Assine */
@@ -355,7 +344,7 @@ h2.produtos-mineiro::before {
 
 .footer p {
 	margin-top: 100px;
-	font-size: 18px;
+	font-size: 1.125em;
 	font-weight: 900;
 
 }
